@@ -9,24 +9,36 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-	cnv = new Canvas(windowWidth,windowHeight);
 
- 	rectangle = new Sprite(100, 100, 20, 20, 'd');
-	rectangle.color = 'red';
+	spriteY=  random(50,150);
+	spriteX= random(50,150);
 
-	circle = new Sprite(100, 100, 50, 'd');
-	circle.color = 'green';
+	width = random(300,600);
+	height = random(300,600);
+
+	cnv = new Canvas(width, height);
+
+red = new Sprite(spriteX/2,spriteY/2 ,spriteX,spriteY);
+red.color = 'red';
+
+green = new Sprite( width-spriteX/2, spriteY/2 ,  spriteX,spriteY);
+green.color = 'green';
+
+blue = new Sprite( width-spriteX/2, height-spriteY/2 ,  spriteX,spriteY);
+blue.color = 'blue';
+
+yellow = new Sprite( spriteX/2,  height-spriteY/2,  spriteX,spriteY);
+yellow.color = 'yellow';
+
+purple = new Sprite( width/2, height/2 ,  spriteX,spriteY);
+purple.color = 'purple';
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	rectangle = new Sprite(100, 100, 20, 20, 'd');
-	rectangle.color = 'red';
-
-	circle = new Sprite(100, 100, 50, 'd');
-	circle.color = 'green';
+	background('cyan');
 }
 
 /*******************************************************/
