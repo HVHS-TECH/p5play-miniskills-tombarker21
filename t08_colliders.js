@@ -43,8 +43,7 @@ wallTop = new Sprite(windowWidth/2, 0, windowWidth, 30, 'k');
 wallBot = new Sprite(windowWidth/2, windowHeight, windowWidth, 30, 'k');
 
 	alienGroup = new Group(); 
-	console.log("move biotch");
-	alienGroup.collides(circle, func2Call); ///not working ;L
+		alienGroup.collides(circle, func2Call); ///not working ;L
 
 for (i = 0; i < 10; i++) {
 console.log('helloooooo')
